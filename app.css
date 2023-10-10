@@ -1,0 +1,10 @@
+head, body, html {
+  border: none;
+  padding: none;
+  margin: none;
+}
+
+button {
+  background-color: white;
+  border: solid black 1px;
+}/*# sourceMappingURL=app.css.map */

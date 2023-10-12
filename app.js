@@ -44,4 +44,4 @@ let end = document.querySelector('.end');
 end.addEventListener('click', function() {
     home.classList.remove('hidden');
     card.classList.add('hidden');
-})
+});

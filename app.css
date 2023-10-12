@@ -1,9 +1,16 @@
-body, html {
+body, html, head {
   border: 0px;
   padding: 0px;
   margin: 0px;
   height: 100%;
   width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+head {
+  width: 0%;
+  height: 0%;
 }
 
 button, input {
@@ -12,7 +19,7 @@ button, input {
   border-radius: 6px;
 }
 
-#home {
+.home {
   width: 100%;
   height: 100%;
   display: flex;
@@ -20,29 +27,30 @@ button, input {
   justify-content: center;
   flex-direction: column;
 }
-#home .options {
-  height: 30%;
+.home .options {
+  height: 25%;
+  width: 70%;
 }
-#home input {
+.home input {
   width: 140px;
   height: 50px;
   font-size: medium;
 }
-#home p {
+.home p {
   font-size: 250%;
 }
-#home #start {
+.home #start {
   width: 140px;
   height: 50px;
   font-size: x-large;
 }
-#home #start:hover {
+.home #start:hover {
   background-color: lightblue;
 }
 
 .players {
   width: 100%;
-  height: 30%;
+  height: 25%;
   display: flex;
   justify-content: space-around;
 }
@@ -60,14 +68,24 @@ input.id::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.hidden {
-  visibility: hidden;
-  width: 0%;
-  height: 0%;
-}
-
 .scoring {
   width: 80%;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
 }/*# sourceMappingURL=app.css.map */

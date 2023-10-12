@@ -33,10 +33,9 @@ d.addEventListener('click', function() {
     c.style.backgroundColor = 'white';
     d.style.backgroundColor = 'lightblue';
 })
-let s
-tart = document.getElementById('start');
-let home = document.getElementById('home');
-let card = document.getElementById('scoring');
+let start = document.getElementById('start');
+let home = document.querySelector('.home');
+let card = document.querySelector('.scoring');
 start.addEventListener('click', function() {
     home.classList.add('hidden');
     card.classList.remove('hidden');

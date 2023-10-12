@@ -1,8 +1,9 @@
-head, body, html {
-  border: none;
-  padding: none;
-  margin: none;
+body, html {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
   height: 100%;
+  width: 100%;
 }
 
 button, input {
@@ -60,9 +61,13 @@ input.id::-webkit-inner-spin-button {
 }
 
 .hidden {
-  display: none;
+  visibility: hidden;
+  width: 0%;
+  height: 0%;
 }
 
-.showing {
-  display: flex;
+.scoring {
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
 }/*# sourceMappingURL=app.css.map */

@@ -38,6 +38,6 @@ tart = document.getElementById('start');
 let home = document.getElementById('home');
 let card = document.getElementById('scoring');
 start.addEventListener('click', function() {
-    home.disabled = true;
-    card.disabled = false;
+    home.classList.add('hidden');
+    card.classList.remove('hidden');
 });

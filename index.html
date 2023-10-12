@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Golf Scoring</title>
-        <script src="app.js" defer></script>
         <link href="app.css" type="text/css" rel="stylesheet">
+        <script src="app.js" defer></script>
     </head>
     <body>
-        <div id="home">
+        <div id="home" class="showing">
             <p>Players</p>
             <div class="players">
                 <div class="space"></div>
@@ -18,12 +18,12 @@
                 <button id="four">4</button>
                 <div class="space"></div>
             </div>
-            <input type="number" placeholder="Enter Course ID" min="10000" max="99999">
+            <input type="number" placeholder="Enter Course ID" min="10000" max="99999" class="id">
             <div class="options"></div>
-            <button class="start">Start Game</button>
+            <button id="start">Start Game</button>
         </div>
-        <div id="scoring">
-
+        <div id="scoring" class="hidden">
+            
         </div>
     </body>
 </html>

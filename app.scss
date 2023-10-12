@@ -27,10 +27,13 @@ button, input {
     p {
         font-size: 250%;
     }
-    .start {
+    #start {
         width: 140px;
         height: 50px;
         font-size: x-large;
+    }
+    #start:hover {
+        background-color: lightblue;
     }
 }
 .players {
@@ -46,4 +49,14 @@ button, input {
     .space {
         width: 10%;
     }
+}
+input.id::-webkit-outer-spin-button,
+input.id::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.hidden {
+    display: none;
+}
+.showing {
+    display: flex;
 }

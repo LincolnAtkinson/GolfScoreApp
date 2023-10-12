@@ -33,3 +33,11 @@ d.addEventListener('click', function() {
     c.style.backgroundColor = 'white';
     d.style.backgroundColor = 'lightblue';
 })
+let s
+tart = document.getElementById('start');
+let home = document.getElementById('home');
+let card = document.getElementById('scoring');
+start.addEventListener('click', function() {
+    home.disabled = true;
+    card.disabled = false;
+});

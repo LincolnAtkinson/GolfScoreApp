@@ -33,10 +33,15 @@ d.addEventListener('click', function() {
     c.style.backgroundColor = 'white';
     d.style.backgroundColor = 'lightblue';
 })
-let start = document.getElementById('start');
+let start = document.querySelector('.start');
 let home = document.querySelector('.home');
 let card = document.querySelector('.scoring');
 start.addEventListener('click', function() {
     home.classList.add('hidden');
     card.classList.remove('hidden');
 });
+let end = document.querySelector('.end');
+end.addEventListener('click', function() {
+    home.classList.remove('hidden');
+    card.classList.add('hidden');
+})

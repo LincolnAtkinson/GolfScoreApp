@@ -39,12 +39,12 @@ button, input {
 .home p {
   font-size: 250%;
 }
-.home #start {
+.home .start {
   width: 140px;
   height: 50px;
   font-size: x-large;
 }
-.home #start:hover {
+.home .start:hover {
   background-color: lightblue;
 }
 

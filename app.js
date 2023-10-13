@@ -45,3 +45,9 @@ end.addEventListener('click', function() {
     home.classList.remove('hidden');
     card.classList.add('hidden');
 });
+
+fetch('http://uxcobra.com/golfapi/course11819.txt')
+    .then(response => response.text())
+    .then(data => {
+        const holeData = data;
+})

@@ -36,10 +36,20 @@ d.addEventListener('click', function() {
 let start = document.querySelector('.start');
 let home = document.querySelector('.home');
 let card = document.querySelector('.scoring');
+let Tee = document.querySelector('.Tee');
+let tee = document.querySelector('.tee');
+let score = document.querySelector('.scoreCard')
+
 start.addEventListener('click', function() {
     home.classList.add('hidden');
-    card.classList.remove('hidden');
+    tee.classList.remove('hidden');
 });
+score.addEventListener('click', function() {
+    tee.classList.add('hidden');
+    card.classList.remove('hidden2');
+});
+
+
 let end = document.querySelector('.end');
 end.addEventListener('click', function() {
     home.classList.remove('hidden');

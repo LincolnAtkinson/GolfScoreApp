@@ -4,7 +4,6 @@ body, html, head {
   margin: 0px;
   height: 100%;
   width: 100%;
-  display: flex;
   overflow: hidden;
 }
 
@@ -48,6 +47,49 @@ button, input {
   background-color: lightblue;
 }
 
+.tee {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.tee p {
+  font-size: 250%;
+}
+.tee .scoreCard {
+  width: 180px;
+  height: 75px;
+  font-size: x-large;
+}
+.tee .scoreCard:hover {
+  background-color: lightblue;
+}
+
+.teeType {
+  width: 100%;
+  height: 25%;
+  margin: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.teeType button {
+  font-size: larger;
+  width: 25%;
+  height: 45px;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teeType button:hover {
+  background-color: lightblue;
+}
+.teeType .space {
+  width: 10%;
+}
+
 .players {
   width: 100%;
   height: 25%;
@@ -76,7 +118,7 @@ input.id::-webkit-inner-spin-button {
 
 table {
   border-collapse: collapse;
-  margin: 10%;
+  margin: 5%;
 }
 
 td {
@@ -92,6 +134,12 @@ h1 {
 }
 
 .hidden {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+.hidden2 {
   visibility: hidden;
   width: 0px;
   height: 0px;

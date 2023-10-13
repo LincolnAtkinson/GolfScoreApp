@@ -36,15 +36,23 @@ d.addEventListener('click', function() {
 let start = document.querySelector('.start');
 let home = document.querySelector('.home');
 let card = document.querySelector('.scoring');
+let Tee = document.querySelector('.Tee');
+let tee = document.querySelector('.tee');
+let score = document.querySelector('.scoreCard')
+
 let cId = document.querySelector('.id');
 let table = document.getElementById('table');
 start.addEventListener('click', function() {
-    if (cId.value !== ``) {
-        home.classList.add('hidden');
-        card.classList.remove('hidden');
-        buildCard();
-    }
+    home.classList.add('hidden');
+    tee.classList.remove('hidden');
 });
+score.addEventListener('click', function() {
+    tee.classList.add('hidden');
+    card.classList.remove('hidden2');
+    buildCard();
+});
+
+
 let end = document.querySelector('.end');
 end.addEventListener('click', function() {
     home.classList.remove('hidden');

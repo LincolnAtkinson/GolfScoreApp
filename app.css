@@ -76,12 +76,19 @@ input.id::-webkit-inner-spin-button {
 
 table {
   border-collapse: collapse;
+  margin: 10%;
 }
 
 td {
   border: 1px solid black;
   padding: 10px;
   text-align: center;
+  height: 25px;
+  width: 25px;
+}
+
+h1 {
+  margin-left: 10%;
 }
 
 .hidden {

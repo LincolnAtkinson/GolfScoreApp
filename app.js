@@ -33,6 +33,41 @@ d.addEventListener('click', function() {
     c.style.backgroundColor = 'white';
     d.style.backgroundColor = 'lightblue';
 })
+let p = document.getElementById('pro');
+let ch = document.getElementById('champion');
+let m = document.getElementById('men');
+let w = document.getElementById('women');
+p.style.backgroundColor = 'lightblue';
+selected = p;
+
+p.addEventListener('click', function() {
+    selected = p;
+    p.style.backgroundColor = 'lightblue';
+    ch.style.backgroundColor = 'white';
+    m.style.backgroundColor = 'white';
+    w.style.backgroundColor = 'white';
+});
+ch.addEventListener('click', function() {
+    selected = ch;
+    p.style.backgroundColor = 'white';
+    ch.style.backgroundColor = 'lightblue';
+    m.style.backgroundColor = 'white';
+    w.style.backgroundColor = 'white';
+})
+m.addEventListener('click', function() {
+    selected = m;
+    p.style.backgroundColor = 'white';
+    ch.style.backgroundColor = 'white';
+    m.style.backgroundColor = 'lightblue';
+    w.style.backgroundColor = 'white';
+})
+w.addEventListener('click', function() {
+    selected = w;
+    p.style.backgroundColor = 'white';
+    ch.style.backgroundColor = 'white';
+    m.style.backgroundColor = 'white';
+    w.style.backgroundColor = 'lightblue';
+})
 let start = document.querySelector('.start');
 let home = document.querySelector('.home');
 let card = document.querySelector('.scoring');

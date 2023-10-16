@@ -122,8 +122,10 @@ td, th {
     width: 25px;
 }
 h1{
-    margin-left: 10%; 
-
+     margin: 5%;
+     max-width: 1000px;
+    background-color:  #318a31;
+    padding: 30px;
 }
 .hidden {
     visibility: hidden;
@@ -134,4 +136,7 @@ h1{
     visibility: hidden;
     width: 0px;
     height: 0px;
+}
+.end{
+    margin: 5%;
 }

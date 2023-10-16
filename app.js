@@ -76,33 +76,51 @@ function buildCard() {
                     parRow.innerHTML = '<th>Par</th>';
                     handicapRow.innerHTML = '<th>Handicap</th>';
 
-                    let outSum = 0;
-                    let inSum = 0;
+                    let outSump = 0;
+                    let inSump = 0;
+                    let outSumy = 0;
+                    let inSumy = 0;
+                    let outSumh = 0;
+                    let inSumh = 0;
 
                     holes.forEach(hole => {
                         const teeBox = hole.teeBoxes.find(teeBox => teeBox.teeType === "men"); // Replace with the selected tee box
                         if (teeBox) {
-                        yardageRow.insertCell().textContent = teeBox.yards;
-                        parRow.insertCell().textContent = teeBox.par;
-                        handicapRow.insertCell().textContent = teeBox.hcp;
+                            yardageRow.insertCell().textContent = teeBox.yards;
+                            parRow.insertCell().textContent = teeBox.par;
+                            handicapRow.insertCell().textContent = teeBox.hcp;
 
-                        if (hole.hole <= 9) {
-                            outSum += teeBox.par;
-                        } else {
-                            inSum += teeBox.par;
-                        }
+                            if (hole.hole <= 9) {
+                                outSump += teeBox.par;
+                                outSumy += teeBox.yards;
+                                outSumh += teeBox.hcp;
+                            } else {
+                                inSump += teeBox.par;
+                                inSumy += teeBox.yards;
+                                inSumh += teeBox.hcp;
+                            }
                         }
                     });
-
-                    const totalRow = holeData.getElementsByTagName('tr')[3];
-                    totalRow.innerHTML = `<th>Total</th><td colspan="9">${outSum}</td><td colspan="9">${inSum}</td><td colspan="6">${outSum + inSum}</td>`;
+                    yardageRow.insertCell().textContent = outSumy;
+                    yardageRow.insertCell().textContent = inSumy;
+                    yardageRow.insertCell().textContent = outSumy + inSumy;
+                    parRow.insertCell().textContent = outSump;
+                    parRow.insertCell().textContent = inSump;
+                    parRow.insertCell().textContent = outSump + inSump;
+                    handicapRow.insertCell().textContent = outSumh;
+                    handicapRow.insertCell().textContent = inSumh;
+                    handicapRow.insertCell().textContent = outSumh + inSumh;
+                    const outRow = holeData.getElementsByTagName('tc')[18];
+                    const inRow = holeData.getElementsByClassName('tc')[19];
+                    const totalRow = holeData.getElementsByTagName('tc')[20];
+                    //totalRow.innerHTML = `<th>Total</th><td colspan="9">${outSum}</td><td colspan="9">${inSum}</td><td colspan="6">${outSum + inSum}</td>`;
                 }
                 populateTable();
             })
     }
     else if (cId.value === `18300`) {
         fetch('http://uxcobra.com/golfapi/course18300.txt')
-            .then(response => response.text())
+            .then(response => response.json())
             .then(data => {
                 const holes = data.data.holes;
                 const holeData = document.getElementById('holeData').getElementsByTagName('tbody')[0];
@@ -116,25 +134,43 @@ function buildCard() {
                     parRow.innerHTML = '<th>Par</th>';
                     handicapRow.innerHTML = '<th>Handicap</th>';
 
-                    let outSum = 0;
-                    let inSum = 0;
+                    let outSump = 0;
+                    let inSump = 0;
+                    let outSumy = 0;
+                    let inSumy = 0;
+                    let outSumh = 0;
+                    let inSumh = 0;
 
                     holes.forEach(hole => {
                         const teeBox = hole.teeBoxes.find(teeBox => teeBox.teeType === "men"); // Replace with the selected tee box
                         if (teeBox) {
-                        yardageRow.insertCell().textContent = teeBox.yards;
-                        parRow.insertCell().textContent = teeBox.par;
-                        handicapRow.insertCell().textContent = teeBox.hcp;
+                            yardageRow.insertCell().textContent = teeBox.yards;
+                            parRow.insertCell().textContent = teeBox.par;
+                            handicapRow.insertCell().textContent = teeBox.hcp;
 
-                        if (hole.hole <= 9) {
-                            outSum += teeBox.par;
-                        } else {
-                            inSum += teeBox.par;
-                        }
+                            if (hole.hole <= 9) {
+                                outSump += teeBox.par;
+                                outSumy += teeBox.yards;
+                                outSumh += teeBox.hcp;
+                            } else {
+                                inSump += teeBox.par;
+                                inSumy += teeBox.yards;
+                                inSumh += teeBox.hcp;
+                            }
                         }
                     });
-
-                    const totalRow = holeData.getElementsByTagName('tr')[3];
+                    yardageRow.insertCell().textContent = outSumy;
+                    yardageRow.insertCell().textContent = inSumy;
+                    yardageRow.insertCell().textContent = outSumy + inSumy;
+                    parRow.insertCell().textContent = outSump;
+                    parRow.insertCell().textContent = inSump;
+                    parRow.insertCell().textContent = outSump + inSump;
+                    handicapRow.insertCell().textContent = outSumh;
+                    handicapRow.insertCell().textContent = inSumh;
+                    handicapRow.insertCell().textContent = outSumh + inSumh;
+                    const outRow = holeData.getElementsByTagName('tc')[18];
+                    const inRow = holeData.getElementsByClassName('tc')[19];
+                    const totalRow = holeData.getElementsByTagName('tc')[20];
                     totalRow.innerHTML = `<th>Total</th><td colspan="9">${outSum}</td><td colspan="9">${inSum}</td><td colspan="6">${outSum + inSum}</td>`;
                 }
                 populateTable();
@@ -142,9 +178,9 @@ function buildCard() {
     }
     else if (cId.value === `19002`) {
         fetch('http://uxcobra.com/golfapi/course19002.txt')
-            .then(response => response.text())
+            .then(response => response.json())
             .then(data => {
-                holes = data.data.holes;
+                const holes = data.data.holes;
                 const holeData = document.getElementById('holeData').getElementsByTagName('tbody')[0];
 
                 function populateTable() {
@@ -156,25 +192,43 @@ function buildCard() {
                     parRow.innerHTML = '<th>Par</th>';
                     handicapRow.innerHTML = '<th>Handicap</th>';
 
-                    let outSum = 0;
-                    let inSum = 0;
+                    let outSump = 0;
+                    let inSump = 0;
+                    let outSumy = 0;
+                    let inSumy = 0;
+                    let outSumh = 0;
+                    let inSumh = 0;
 
                     holes.forEach(hole => {
                         const teeBox = hole.teeBoxes.find(teeBox => teeBox.teeType === "men"); // Replace with the selected tee box
                         if (teeBox) {
-                        yardageRow.insertCell().textContent = teeBox.yards;
-                        parRow.insertCell().textContent = teeBox.par;
-                        handicapRow.insertCell().textContent = teeBox.hcp;
+                            yardageRow.insertCell().textContent = teeBox.yards;
+                            parRow.insertCell().textContent = teeBox.par;
+                            handicapRow.insertCell().textContent = teeBox.hcp;
 
-                        if (hole.hole <= 9) {
-                            outSum += teeBox.par;
-                        } else {
-                            inSum += teeBox.par;
-                        }
+                            if (hole.hole <= 9) {
+                                outSump += teeBox.par;
+                                outSumy += teeBox.yards;
+                                outSumh += teeBox.hcp;
+                            } else {
+                                inSump += teeBox.par;
+                                inSumy += teeBox.yards;
+                                inSumh += teeBox.hcp;
+                            }
                         }
                     });
-
-                    const totalRow = holeData.getElementsByTagName('tr')[3];
+                    yardageRow.insertCell().textContent = outSumy;
+                    yardageRow.insertCell().textContent = inSumy;
+                    yardageRow.insertCell().textContent = outSumy + inSumy;
+                    parRow.insertCell().textContent = outSump;
+                    parRow.insertCell().textContent = inSump;
+                    parRow.insertCell().textContent = outSump + inSump;
+                    handicapRow.insertCell().textContent = outSumh;
+                    handicapRow.insertCell().textContent = inSumh;
+                    handicapRow.insertCell().textContent = outSumh + inSumh;
+                    const outRow = holeData.getElementsByTagName('tc')[18];
+                    const inRow = holeData.getElementsByClassName('tc')[19];
+                    const totalRow = holeData.getElementsByTagName('tc')[20];
                     totalRow.innerHTML = `<th>Total</th><td colspan="9">${outSum}</td><td colspan="9">${inSum}</td><td colspan="6">${outSum + inSum}</td>`;
                 }
                 populateTable();

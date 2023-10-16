@@ -5,7 +5,7 @@ body, html, head {
     height: 100%;
     width: 100%;
     
-    overflow: hidden;
+    overflow: auto;
 }
 head {
     width: 0%;
@@ -113,6 +113,10 @@ input.id::-webkit-inner-spin-button {
 table {
     border-collapse: collapse;
     margin: 5%;
+    max-width: 500px;
+}
+#holedata{
+    max-width: 500px;
 }
 td, th {
     border: 1px solid black;
@@ -125,7 +129,7 @@ h1{
      margin: 5%;
      max-width: 1000px;
     background-color:  #318a31;
-    padding: 30px;
+    padding: 30px; 
 }
 .hidden {
     visibility: hidden;
@@ -139,4 +143,48 @@ h1{
 }
 .end{
     margin: 5%;
+}
+.pa{
+    td{
+        width: 20px;
+        height: 20px;
+        input{
+            max-width: 50%;
+            max-height: 50%; 
+        }
+    }
+   
+}
+.pb{
+    td{
+        width: 20px;
+        height: 20px;
+        input{
+            max-width: 50%;
+            max-height: 50%; 
+        }
+    }
+   
+}
+.pc{
+    td{
+        width: 20px;
+        height: 20px;
+        input{
+            max-width: 50%;
+            max-height: 50%; 
+        }
+    }
+   
+}
+.pd{
+    td{
+        width: 20px;
+        height: 20px;
+        input{
+            max-width: 50%;
+            max-height: 50%; 
+        }
+    }
+   
 }

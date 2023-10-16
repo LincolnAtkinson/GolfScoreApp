@@ -4,7 +4,7 @@ body, html, head {
   margin: 0px;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 head {
@@ -119,6 +119,11 @@ input.id::-webkit-inner-spin-button {
 table {
   border-collapse: collapse;
   margin: 5%;
+  max-width: 500px;
+}
+
+#holedata {
+  max-width: 500px;
 }
 
 td, th {
@@ -150,4 +155,40 @@ h1 {
 
 .end {
   margin: 5%;
+}
+
+.pa td {
+  width: 20px;
+  height: 20px;
+}
+.pa td input {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.pb td {
+  width: 20px;
+  height: 20px;
+}
+.pb td input {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.pc td {
+  width: 20px;
+  height: 20px;
+}
+.pc td input {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.pd td {
+  width: 20px;
+  height: 20px;
+}
+.pd td input {
+  max-width: 50%;
+  max-height: 50%;
 }/*# sourceMappingURL=app.css.map */

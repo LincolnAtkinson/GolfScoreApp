@@ -162,8 +162,8 @@ h1 {
   height: 20px;
 }
 .pa td input {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 10%;
+  max-height: 10%;
 }
 
 .pb td {
@@ -171,8 +171,8 @@ h1 {
   height: 20px;
 }
 .pb td input {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 10%;
+  max-height: 10%;
 }
 
 .pc td {
@@ -180,8 +180,8 @@ h1 {
   height: 20px;
 }
 .pc td input {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 10%;
+  max-height: 10%;
 }
 
 .pd td {
@@ -189,6 +189,6 @@ h1 {
   height: 20px;
 }
 .pd td input {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 10%;
+  max-height: 10%;
 }/*# sourceMappingURL=app.css.map */

@@ -639,6 +639,7 @@ function buildCard() {
             })
     }
     else {
-        alert(`Error: No Course Found With The Current Id. Please Refresh The Page`);
+        alert(`Error: No Course Found With The Current Id.`);
+        location.reload();
     }
 }

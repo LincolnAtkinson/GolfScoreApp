@@ -185,56 +185,64 @@ function buildCard() {
 
                     paOCell.forEach(function(paOCell) {
                         paOCell.addEventListener('input', function() {
-                            paOSum += paOCell.innerHTML;
+                            let val = paOCell.innerhtml;
+                            paOSum += val;
                             paO.textContent = paOSum;
                             paT.textContent = paOSum + paISum;
                         })
                     })
                     paICell.forEach(function(paICell) {
                         paICell.addEventListener('input', function() {
-                            paISum += paICell.innerHTML;
+                            let val = paICell.innerhtml;
+                            paISum += val;
                             paI.textContent = paISum;
                             paT.textContent = paOSum + paISum;
                         })
                     })
                     pbOCell.forEach(function(pbOCell) {
                         pbOCell.addEventListener('input', function() {
-                            pbOSum += pbOCell.value;
+                            let val = pbOcell.innerhtml
+                            pbOSum += val;
                             pbO.textContent = pbOSum;
                             pbT.textContent = pbOSum + pbISum;
                         })
                     })
                     pbICell.forEach(function(pbICell) {
                         pbICell.addEventListener('input', function() {
-                            pbISum += paICell.innerHTML;
+                            let val = pbIcell.innerhtml
+                            pbISum += val;
                             pbI.textContent = pbISum;
                             pbT.textContent = pbOSum + pbISum;
                         })
                     })
                     pcOCell.forEach(function(pcOCell) {
                         pcOCell.addEventListener('input', function() {
-                            pcOSum += pcOCell.innerHTML;
+                            let val = pcOcell.innerhtml
+                            pcOSum += val;
                             pcO.textContent = pcOSum;
                             pcT.textContent = pcOSum + pcISum;
                         })
                     })
                     pcICell.forEach(function(pcICell) {
                         pcICell.addEventListener('input', function() {
-                            pcISum += pcICell.innerHTML;
+                            let val = pcIcell.innerhtml
+                            pcISum += val;
                             pcI.textContent = pcISum;
                             pcT.textContent = pcOSum + pcISum;
                         })
                     })
                     pdOCell.forEach(function(pdOCell) {
                         pdOCell.addEventListener('input', function() {
-                            pdOSum += pdOCell.innerHTML;
+                            let val = pdOcell.innerhtml
+                            pdOSum += val;
                             pdO.textContent = pdOSum;
                             pdT.textContent = pdOSum + pdISum;
                         })
                     })
                     pdICell.forEach(function(pdICell) {
                         pdICell.addEventListener('input', function() {
-                            pdISum += pdICell.innerHTML;
+                            let val = pdIcell.innerhtml
+                            pdISum += val;
                             pdI.textContent = pdISum;
                             pdT.textContent = pdOSum + pdISum;
                         })
@@ -331,65 +339,73 @@ function buildCard() {
                     let pdOSum = 0;
                     let pdISum = 0;
 
-                    paOCell.forEach(function(paOSum) {
-                        paOSum.addEventListener('input', function() {
-                            paOSum += paOCell.value;
+                    paOCell.forEach(function(paOCell) {
+                        paOCell.addEventListener('input', function() {
+                            let val = paOCell.innerhtml;
+                            paOSum += val;
                             paO.textContent = paOSum;
                             paT.textContent = paOSum + paISum;
                         })
                     })
-                    paICell.forEach(function(paISum) {
-                        paISum.addEventListener('input', function() {
-                            paISum += paICell.value;
+                    paICell.forEach(function(paICell) {
+                        paICell.addEventListener('input', function() {
+                            let val = paICell.innerhtml;
+                            paISum += val;
                             paI.textContent = paISum;
                             paT.textContent = paOSum + paISum;
                         })
                     })
-                    pbOCell.forEach(function(pbOSum) {
-                        pbOSum.addEventListener('input', function() {
-                            pbOSum += pbOCell.value;
+                    pbOCell.forEach(function(pbOCell) {
+                        pbOCell.addEventListener('input', function() {
+                            let val = pbOcell.innerhtml
+                            pbOSum += val;
                             pbO.textContent = pbOSum;
                             pbT.textContent = pbOSum + pbISum;
                         })
                     })
-                    pbICell.forEach(function(pbISum) {
-                        pbISum.addEventListener('input', function() {
-                            pbISum += paICell.value;
+                    pbICell.forEach(function(pbICell) {
+                        pbICell.addEventListener('input', function() {
+                            let val = pbIcell.innerhtml
+                            pbISum += val;
                             pbI.textContent = pbISum;
                             pbT.textContent = pbOSum + pbISum;
                         })
                     })
-                    pcOCell.forEach(function(pcOSum) {
-                        pcOSum.addEventListener('input', function() {
-                            pcOSum += pcOCell.value;
+                    pcOCell.forEach(function(pcOCell) {
+                        pcOCell.addEventListener('input', function() {
+                            let val = pcOcell.innerhtml
+                            pcOSum += val;
                             pcO.textContent = pcOSum;
                             pcT.textContent = pcOSum + pcISum;
                         })
                     })
-                    pcICell.forEach(function(pcISum) {
-                        pcISum.addEventListener('input', function() {
-                            pcISum += pcICell.value;
+                    pcICell.forEach(function(pcICell) {
+                        pcICell.addEventListener('input', function() {
+                            let val = pcIcell.innerhtml
+                            pcISum += val;
                             pcI.textContent = pcISum;
                             pcT.textContent = pcOSum + pcISum;
                         })
                     })
-                    pdOCell.forEach(function(pdOSum) {
-                        pdOSum.addEventListener('input', function() {
-                            pdOSum += pdOCell.value;
+                    pdOCell.forEach(function(pdOCell) {
+                        pdOCell.addEventListener('input', function() {
+                            let val = pdOcell.innerhtml
+                            pdOSum += val;
                             pdO.textContent = pdOSum;
                             pdT.textContent = pdOSum + pdISum;
                         })
                     })
-                    pdICell.forEach(function(pdISum) {
-                        pdISum.addEventListener('input', function() {
-                            pdISum += pdICell.value;
+                    pdICell.forEach(function(pdICell) {
+                        pdICell.addEventListener('input', function() {
+                            let val = pdIcell.innerhtml
+                            pdISum += val;
                             pdI.textContent = pdISum;
                             pdT.textContent = pdOSum + pdISum;
                         })
                     })
                 }
                 populateTable();
-        })
+            })
     }
     else if (cId.value === `19002`) {
         fetch('http://uxcobra.com/golfapi/course19002.txt')
@@ -479,65 +495,73 @@ function buildCard() {
                     let pdOSum = 0;
                     let pdISum = 0;
 
-                    paOCell.forEach(function(paOSum) {
-                        paOSum.addEventListener('input', function() {
-                            paOSum += paOCell.value;
+                    paOCell.forEach(function(paOCell) {
+                        paOCell.addEventListener('input', function() {
+                            let val = paOCell.innerhtml;
+                            paOSum += val;
                             paO.textContent = paOSum;
                             paT.textContent = paOSum + paISum;
                         })
                     })
-                    paICell.forEach(function(paISum) {
-                        paISum.addEventListener('input', function() {
-                            paISum += paICell.value;
+                    paICell.forEach(function(paICell) {
+                        paICell.addEventListener('input', function() {
+                            let val = paICell.innerhtml;
+                            paISum += val;
                             paI.textContent = paISum;
                             paT.textContent = paOSum + paISum;
                         })
                     })
-                    pbOCell.forEach(function(pbOSum) {
-                        pbOSum.addEventListener('input', function() {
-                            pbOSum += pbOCell.value;
+                    pbOCell.forEach(function(pbOCell) {
+                        pbOCell.addEventListener('input', function() {
+                            let val = pbOcell.innerhtml
+                            pbOSum += val;
                             pbO.textContent = pbOSum;
                             pbT.textContent = pbOSum + pbISum;
                         })
                     })
-                    pbICell.forEach(function(pbISum) {
-                        pbISum.addEventListener('input', function() {
-                            pbISum += paICell.value;
+                    pbICell.forEach(function(pbICell) {
+                        pbICell.addEventListener('input', function() {
+                            let val = pbIcell.innerhtml
+                            pbISum += val;
                             pbI.textContent = pbISum;
                             pbT.textContent = pbOSum + pbISum;
                         })
                     })
-                    pcOCell.forEach(function(pcOSum) {
-                        pcOSum.addEventListener('input', function() {
-                            pcOSum += pcOCell.value;
+                    pcOCell.forEach(function(pcOCell) {
+                        pcOCell.addEventListener('input', function() {
+                            let val = pcOcell.innerhtml
+                            pcOSum += val;
                             pcO.textContent = pcOSum;
                             pcT.textContent = pcOSum + pcISum;
                         })
                     })
-                    pcICell.forEach(function(pcISum) {
-                        pcISum.addEventListener('input', function() {
-                            pcISum += pcICell.value;
+                    pcICell.forEach(function(pcICell) {
+                        pcICell.addEventListener('input', function() {
+                            let val = pcIcell.innerhtml
+                            pcISum += val;
                             pcI.textContent = pcISum;
                             pcT.textContent = pcOSum + pcISum;
                         })
                     })
-                    pdOCell.forEach(function(pdOSum) {
-                        pdOSum.addEventListener('input', function() {
-                            pdOSum += pdOCell.value;
+                    pdOCell.forEach(function(pdOCell) {
+                        pdOCell.addEventListener('input', function() {
+                            let val = pdOcell.innerhtml
+                            pdOSum += val;
                             pdO.textContent = pdOSum;
                             pdT.textContent = pdOSum + pdISum;
                         })
                     })
-                    pdICell.forEach(function(pdISum) {
-                        pdISum.addEventListener('input', function() {
-                            pdISum += pdICell.value;
+                    pdICell.forEach(function(pdICell) {
+                        pdICell.addEventListener('input', function() {
+                            let val = pdIcell.innerhtml
+                            pdISum += val;
                             pdI.textContent = pdISum;
                             pdT.textContent = pdOSum + pdISum;
                         })
                     })
                 }
                 populateTable();
-        })
+            })
     }
     else {
         alert(`Error: No Course Found With The Current Id. Please Refresh The Page`);

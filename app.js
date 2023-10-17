@@ -2,37 +2,37 @@ let a = document.getElementById('one');
 let b = document.getElementById('two');
 let c = document.getElementById('three');
 let d = document.getElementById('four');
-a.style.backgroundColor = 'lightblue';
+a.style.borderColor = 'lightblue';
 selected = 1;
 let cId = document.querySelector('.id');
 
 a.addEventListener('click', function() {
     selected = 1;
-    a.style.backgroundColor = 'lightblue';
-    b.style.backgroundColor = 'white';
-    c.style.backgroundColor = 'white';
-    d.style.backgroundColor = 'white';
+    a.style.borderColor = 'lightblue';
+    b.style.borderColor = 'black';
+    c.style.borderColor = 'black';
+    d.style.borderColor = 'black';
 });
 b.addEventListener('click', function() {
     selected = 2;
-    a.style.backgroundColor = 'white';
-    b.style.backgroundColor = 'lightblue';
-    c.style.backgroundColor = 'white';
-    d.style.backgroundColor = 'white';
+    a.style.borderColor = 'black';
+    b.style.borderColor = 'lightblue';
+    c.style.borderColor = 'black';
+    d.style.borderColor = 'black';
 })
 c.addEventListener('click', function() {
     selected = 3;
-    a.style.backgroundColor = 'white';
-    b.style.backgroundColor = 'white';
-    c.style.backgroundColor = 'lightblue';
-    d.style.backgroundColor = 'white';
+    a.style.borderColor = 'black';
+    b.style.borderColor = 'black';
+    c.style.borderColor = 'lightblue';
+    d.style.borderColor = 'black';
 })
 d.addEventListener('click', function() {
     selected = 4;
-    a.style.backgroundColor = 'white';
-    b.style.backgroundColor = 'white';
-    c.style.backgroundColor = 'white';
-    d.style.backgroundColor = 'lightblue';
+    a.style.borderColor = 'black';
+    b.style.borderColor = 'black';
+    c.style.borderColor = 'black';
+    d.style.borderColor = 'lightblue';
 })
 
 let th = document.getElementById('thanks');
@@ -51,7 +51,7 @@ let p = document.getElementById('pro');
 let ch = document.getElementById('champion');
 let m = document.getElementById('men');
 let w = document.getElementById('women');
-m.style.backgroundColor = 'lightblue';
+m.style.borderColor = 'lightblue';
 teeS = 'men';
 
 let start = document.querySelector('.start');
@@ -83,10 +83,10 @@ function addTees(id) {
     if (id !== `19002`) {
         p.addEventListener('click', function() {
             teeS = 'pro';
-            p.style.backgroundColor = 'lightblue';
-            ch.style.backgroundColor = 'white';
-            m.style.backgroundColor = 'white';
-            w.style.backgroundColor = 'white';
+            p.style.borderColor = 'lightblue';
+            ch.style.borderColor = 'black';
+            m.style.borderColor = 'black';
+            w.style.borderColor = 'black';
         });
     }
     else {
@@ -95,29 +95,29 @@ function addTees(id) {
     ch.addEventListener('click', function() {
         teeS = 'champion';
         if (id !== `19002`) {
-           p.style.backgroundColor = 'white'; 
+           p.style.borderColor = 'black';
         }
-        ch.style.backgroundColor = 'lightblue';
-        m.style.backgroundColor = 'white';
-        w.style.backgroundColor = 'white';
+            ch.style.borderColor = 'lightblue';
+            m.style.borderColor = 'black';
+            w.style.borderColor = 'black';
     })
     m.addEventListener('click', function() {
         teeS = 'men';
         if (id !== `19002`) {
-            p.style.backgroundColor = 'white';
+            p.style.borderColor = 'black';
         }
-        ch.style.backgroundColor = 'white';
-        m.style.backgroundColor = 'lightblue';
-        w.style.backgroundColor = 'white';
+            ch.style.borderColor = 'black';
+            m.style.borderColor = 'lightblue';
+            w.style.borderColor = 'black';
     })
     w.addEventListener('click', function() {
         teeS = 'women';
         if (id !== `19002`) {
-            p.style.backgroundColor = 'white';
+            p.style.borderColor = 'black';
         }
-        ch.style.backgroundColor = 'white';
-        m.style.backgroundColor = 'white';
-        w.style.backgroundColor = 'lightblue';
+            ch.style.borderColor = 'black';
+            m.style.borderColor = 'black';
+            w.style.borderColor = 'lightblue';
     })
 }
 

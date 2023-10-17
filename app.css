@@ -29,6 +29,14 @@ button, input {
 .home .options {
   height: 25%;
   width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home .options button {
+  height: 30%;
+  width: 20%;
+  font-size: medium;
 }
 .home input {
   width: 140px;
@@ -192,4 +200,10 @@ h1 {
 .pd td input {
   max-width: 10%;
   max-height: 10%;
+}
+
+.red {
+  background-color: red;
+  pointer-events: none;
+  cursor: not-allowed;
 }/*# sourceMappingURL=app.css.map */

@@ -185,7 +185,7 @@ function buildCard() {
 
                     paOCell.forEach(function(paOCell) {
                         paOCell.addEventListener('input', function() {
-                            let val = paOCell.innerhtml;
+                            let val = paOCell.innerHTML;
                             paOSum += val;
                             paO.textContent = paOSum;
                             paT.textContent = paOSum + paISum;
@@ -193,7 +193,7 @@ function buildCard() {
                     })
                     paICell.forEach(function(paICell) {
                         paICell.addEventListener('input', function() {
-                            let val = paICell.innerhtml;
+                            let val = paICell.innerHTML;
                             paISum += val;
                             paI.textContent = paISum;
                             paT.textContent = paOSum + paISum;

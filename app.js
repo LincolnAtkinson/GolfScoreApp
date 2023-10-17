@@ -4,6 +4,7 @@ let c = document.getElementById('three');
 let d = document.getElementById('four');
 a.style.backgroundColor = 'lightblue';
 selected = 1;
+let cId = document.querySelector('.id');
 
 a.addEventListener('click', function() {
     selected = 1;
@@ -33,6 +34,19 @@ d.addEventListener('click', function() {
     c.style.backgroundColor = 'white';
     d.style.backgroundColor = 'lightblue';
 })
+
+let th = document.getElementById('thanks');
+let fox = document.getElementById('fox');
+let oak = document.getElementById('spanish');
+th.addEventListener('click', function() {
+    cId.value = `11819`;
+})
+fox.addEventListener('click', function() {
+    cId.value = `18300`;
+})
+oak.addEventListener('click', function() {
+    cId.value = `19002`;
+})
 let p = document.getElementById('pro');
 let ch = document.getElementById('champion');
 let m = document.getElementById('men');
@@ -40,34 +54,6 @@ let w = document.getElementById('women');
 m.style.backgroundColor = 'lightblue';
 teeS = 'men';
 
-p.addEventListener('click', function() {
-    teeS = 'pro';
-    p.style.backgroundColor = 'lightblue';
-    ch.style.backgroundColor = 'white';
-    m.style.backgroundColor = 'white';
-    w.style.backgroundColor = 'white';
-});
-ch.addEventListener('click', function() {
-    teeS = 'champion';
-    p.style.backgroundColor = 'white';
-    ch.style.backgroundColor = 'lightblue';
-    m.style.backgroundColor = 'white';
-    w.style.backgroundColor = 'white';
-})
-m.addEventListener('click', function() {
-    teeS = 'men';
-    p.style.backgroundColor = 'white';
-    ch.style.backgroundColor = 'white';
-    m.style.backgroundColor = 'lightblue';
-    w.style.backgroundColor = 'white';
-})
-w.addEventListener('click', function() {
-    teeS = 'women';
-    p.style.backgroundColor = 'white';
-    ch.style.backgroundColor = 'white';
-    m.style.backgroundColor = 'white';
-    w.style.backgroundColor = 'lightblue';
-})
 let start = document.querySelector('.start');
 let home = document.querySelector('.home');
 let card = document.querySelector('.scoring');
@@ -75,11 +61,11 @@ let Tee = document.querySelector('.Tee');
 let tee = document.querySelector('.tee');
 let score = document.querySelector('.scoreCard');
 
-let cId = document.querySelector('.id');
 let table = document.getElementById('table');
 start.addEventListener('click', function() {
     home.classList.add('hidden');
     tee.classList.remove('hidden');
+    addTees(cId.value);
 });
 score.addEventListener('click', function() {
     tee.classList.add('hidden');
@@ -87,11 +73,53 @@ score.addEventListener('click', function() {
     buildCard();
 });
 
-
 let end = document.querySelector('.end');
 end.addEventListener('click', function() {
     location.reload();
 });
+
+function addTees(id) {
+    console.log(id);
+    if (id !== `19002`) {
+        p.addEventListener('click', function() {
+            teeS = 'pro';
+            p.style.backgroundColor = 'lightblue';
+            ch.style.backgroundColor = 'white';
+            m.style.backgroundColor = 'white';
+            w.style.backgroundColor = 'white';
+        });
+    }
+    else {
+        p.classList.add('red');
+    }
+    ch.addEventListener('click', function() {
+        teeS = 'champion';
+        if (id !== `19002`) {
+           p.style.backgroundColor = 'white'; 
+        }
+        ch.style.backgroundColor = 'lightblue';
+        m.style.backgroundColor = 'white';
+        w.style.backgroundColor = 'white';
+    })
+    m.addEventListener('click', function() {
+        teeS = 'men';
+        if (id !== `19002`) {
+            p.style.backgroundColor = 'white';
+        }
+        ch.style.backgroundColor = 'white';
+        m.style.backgroundColor = 'lightblue';
+        w.style.backgroundColor = 'white';
+    })
+    w.addEventListener('click', function() {
+        teeS = 'women';
+        if (id !== `19002`) {
+            p.style.backgroundColor = 'white';
+        }
+        ch.style.backgroundColor = 'white';
+        m.style.backgroundColor = 'white';
+        w.style.backgroundColor = 'lightblue';
+    })
+}
 
 function buildCard() {
     if (cId.value === `11819`) {

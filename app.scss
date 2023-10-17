@@ -28,6 +28,14 @@ button, input {
     .options {
         height: 25%;
         width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        button {
+            height: 30%;
+            width: 20%;
+            font-size: medium;
+        }
     }
     input {
         width: 140px;
@@ -191,4 +199,9 @@ h1{
         }
     }
    
+}
+.red {
+    background-color: red;
+    pointer-events: none;
+    cursor: not-allowed;
 }

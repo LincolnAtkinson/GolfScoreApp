@@ -5,6 +5,8 @@ body, html, head {
   height: 100%;
   width: 100%;
   overflow: auto;
+  overflow-y: hidden;
+  background-image: url(images/paper.avif);
 }
 
 head {
@@ -137,7 +139,7 @@ td, th {
 
 h1 {
   margin: 5%;
-  max-width: 1000px;
+  min-width: 90%;
   background-color: #318a31;
   padding: 30px;
 }

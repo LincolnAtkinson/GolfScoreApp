@@ -90,8 +90,7 @@ score.addEventListener('click', function() {
 
 let end = document.querySelector('.end');
 end.addEventListener('click', function() {
-    home.classList.remove('hidden');
-    card.classList.add('hidden');
+    location.reload();
 });
 
 function buildCard() {

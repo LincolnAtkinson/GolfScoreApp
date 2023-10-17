@@ -15,8 +15,8 @@ head {
 }
 
 button, input {
-  background-color: white;
-  border: solid black 1px;
+  background-image: url(images/paper.avif);
+  border: solid black 2px;
   border-radius: 6px;
 }
 
@@ -206,7 +206,7 @@ h1 {
 }
 
 .red {
-  background-color: red;
+  border-color: red;
   pointer-events: none;
   cursor: not-allowed;
 }/*# sourceMappingURL=app.css.map */

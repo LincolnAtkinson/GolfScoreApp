@@ -205,7 +205,7 @@ function buildCard() {
                     pbOCell.forEach(function(pbOCell) {
                         let prevV = parseInt(pbOCell.textContent) || 0;
                         pbOCell.addEventListener('input', function() {
-                            let val = parseInt(pbOcell.textContent) || 0;
+                            let val = parseInt(pbOCell.textContent) || 0;
                             pbOSum += val- prevV;
                             prevV = val;
                             pbO.textContent = pbOSum;
@@ -215,7 +215,7 @@ function buildCard() {
                     pbICell.forEach(function(pbICell) {
                         let prevV = parseInt(pbICell.textContent) || 0;
                         pbICell.addEventListener('input', function() {
-                            let val = parseInt(pbIcell.textContent) || 0;
+                            let val = parseInt(pbICell.textContent) || 0;
                             pbISum += val - prevV;
                             prevV = val;
                             pbI.textContent = pbISum;
@@ -225,7 +225,7 @@ function buildCard() {
                     pcOCell.forEach(function(pcOCell) {
                         let prevV = parseInt(pcOCell.textContent) || 0;
                         pcOCell.addEventListener('input', function() {
-                            let val = parseInt(pcOcell.textContent) || 0;
+                            let val = parseInt(pcOCell.textContent) || 0;
                             pcOSum += val- prevV;
                             prevV = val;
                             pcO.textContent = pcOSum;
@@ -235,7 +235,7 @@ function buildCard() {
                     pcICell.forEach(function(pcICell) {
                         let prevV = parseInt(pcICell.textContent) || 0;
                         pcICell.addEventListener('input', function() {
-                            let val = parseInt(pcIcell.textContent) || 0;
+                            let val = parseInt(pcICell.textContent) || 0;
                             pcISum += val - prevV;
                             prevV = val;
                             pcI.textContent = pcISum;
@@ -245,7 +245,7 @@ function buildCard() {
                     pdOCell.forEach(function(pdOCell) {
                         let prevV = parseInt(pdOCell.textContent) || 0;
                         pdOCell.addEventListener('input', function() {
-                            let val = parseInt(pdOcell.textContent) || 0;
+                            let val = parseInt(pdOCell.textContent) || 0;
                             pdOSum += val - prevV;
                             prevV = val;
                             pdO.textContent = pdOSum;
@@ -255,7 +255,7 @@ function buildCard() {
                     pdICell.forEach(function(pdICell) {
                         let prevV = parseInt(pdICell.textContent) || 0;
                         pdICell.addEventListener('input', function() {
-                            let val = parseInt(pdIcell.textContent) || 0;
+                            let val = parseInt(pdICell.textContent) || 0;
                             pdISum += val - prevV;
                             prevV = val;
                             pdI.textContent = pdISum;
@@ -377,7 +377,7 @@ function buildCard() {
                     pbOCell.forEach(function(pbOCell) {
                         let prevV = parseInt(pbOCell.textContent) || 0;
                         pbOCell.addEventListener('input', function() {
-                            let val = parseInt(pbOcell.textContent) || 0;
+                            let val = parseInt(pbOCell.textContent) || 0;
                             pbOSum += val- prevV;
                             prevV = val;
                             pbO.textContent = pbOSum;
@@ -387,7 +387,7 @@ function buildCard() {
                     pbICell.forEach(function(pbICell) {
                         let prevV = parseInt(pbICell.textContent) || 0;
                         pbICell.addEventListener('input', function() {
-                            let val = parseInt(pbIcell.textContent) || 0;
+                            let val = parseInt(pbICell.textContent) || 0;
                             pbISum += val - prevV;
                             prevV = val;
                             pbI.textContent = pbISum;
@@ -397,7 +397,7 @@ function buildCard() {
                     pcOCell.forEach(function(pcOCell) {
                         let prevV = parseInt(pcOCell.textContent) || 0;
                         pcOCell.addEventListener('input', function() {
-                            let val = parseInt(pcOcell.textContent) || 0;
+                            let val = parseInt(pcOCell.textContent) || 0;
                             pcOSum += val- prevV;
                             prevV = val;
                             pcO.textContent = pcOSum;
@@ -407,7 +407,7 @@ function buildCard() {
                     pcICell.forEach(function(pcICell) {
                         let prevV = parseInt(pcICell.textContent) || 0;
                         pcICell.addEventListener('input', function() {
-                            let val = parseInt(pcIcell.textContent) || 0;
+                            let val = parseInt(pcICell.textContent) || 0;
                             pcISum += val - prevV;
                             prevV = val;
                             pcI.textContent = pcISum;
@@ -417,7 +417,7 @@ function buildCard() {
                     pdOCell.forEach(function(pdOCell) {
                         let prevV = parseInt(pdOCell.textContent) || 0;
                         pdOCell.addEventListener('input', function() {
-                            let val = parseInt(pdOcell.textContent) || 0;
+                            let val = parseInt(pdOCell.textContent) || 0;
                             pdOSum += val - prevV;
                             prevV = val;
                             pdO.textContent = pdOSum;
@@ -427,7 +427,7 @@ function buildCard() {
                     pdICell.forEach(function(pdICell) {
                         let prevV = parseInt(pdICell.textContent) || 0;
                         pdICell.addEventListener('input', function() {
-                            let val = parseInt(pdIcell.textContent) || 0;
+                            let val = parseInt(pdICell.textContent) || 0;
                             pdISum += val - prevV;
                             prevV = val;
                             pdI.textContent = pdISum;
@@ -549,7 +549,7 @@ function buildCard() {
                     pbOCell.forEach(function(pbOCell) {
                         let prevV = parseInt(pbOCell.textContent) || 0;
                         pbOCell.addEventListener('input', function() {
-                            let val = parseInt(pbOcell.textContent) || 0;
+                            let val = parseInt(pbOCell.textContent) || 0;
                             pbOSum += val- prevV;
                             prevV = val;
                             pbO.textContent = pbOSum;
@@ -559,7 +559,7 @@ function buildCard() {
                     pbICell.forEach(function(pbICell) {
                         let prevV = parseInt(pbICell.textContent) || 0;
                         pbICell.addEventListener('input', function() {
-                            let val = parseInt(pbIcell.textContent) || 0;
+                            let val = parseInt(pbICell.textContent) || 0;
                             pbISum += val - prevV;
                             prevV = val;
                             pbI.textContent = pbISum;
@@ -569,7 +569,7 @@ function buildCard() {
                     pcOCell.forEach(function(pcOCell) {
                         let prevV = parseInt(pcOCell.textContent) || 0;
                         pcOCell.addEventListener('input', function() {
-                            let val = parseInt(pcOcell.textContent) || 0;
+                            let val = parseInt(pcOCell.textContent) || 0;
                             pcOSum += val- prevV;
                             prevV = val;
                             pcO.textContent = pcOSum;
@@ -579,7 +579,7 @@ function buildCard() {
                     pcICell.forEach(function(pcICell) {
                         let prevV = parseInt(pcICell.textContent) || 0;
                         pcICell.addEventListener('input', function() {
-                            let val = parseInt(pcIcell.textContent) || 0;
+                            let val = parseInt(pcICell.textContent) || 0;
                             pcISum += val - prevV;
                             prevV = val;
                             pcI.textContent = pcISum;
@@ -589,7 +589,7 @@ function buildCard() {
                     pdOCell.forEach(function(pdOCell) {
                         let prevV = parseInt(pdOCell.textContent) || 0;
                         pdOCell.addEventListener('input', function() {
-                            let val = parseInt(pdOcell.textContent) || 0;
+                            let val = parseInt(pdOCell.textContent) || 0;
                             pdOSum += val - prevV;
                             prevV = val;
                             pdO.textContent = pdOSum;
@@ -599,7 +599,7 @@ function buildCard() {
                     pdICell.forEach(function(pdICell) {
                         let prevV = parseInt(pdICell.textContent) || 0;
                         pdICell.addEventListener('input', function() {
-                            let val = parseInt(pdIcell.textContent) || 0;
+                            let val = parseInt(pdICell.textContent) || 0;
                             pdISum += val - prevV;
                             prevV = val;
                             pdI.textContent = pdISum;

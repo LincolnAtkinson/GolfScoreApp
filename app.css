@@ -131,6 +131,7 @@ table {
   border-collapse: collapse;
   margin: 5%;
   max-width: 500px;
+  background-color: white;
 }
 
 #holedata {
